@@ -1,0 +1,44 @@
+.items{
+    
+    text-align: center;
+
+}
+
+#title{
+    color: seagreen;
+   border-style:outset;
+   text-align:center;
+}
+#button{
+    background-color: rgba(115, 245, 204, 0.555);
+    border-color: rgba(127, 255, 212, 0.571);
+}
+#select{
+    background-color:rgba(178, 223, 231, 0.658);
+    border-color:rgba(127, 255, 212, 0.571);
+}
+#temp{
+    border-width: 3px;
+    border-color: rgba(127, 255, 212, 0.571);
+}
+#result_text{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(174, 87, 25);
+    border-width: 5px;
+    border-radius: 6px;
+    border-color:rgba(127, 255, 212, 0.571);
+    border-style:outset
+}
+#boos_button{
+    background-color:rgb(154, 0, 0);
+    color: rgb(227, 241, 253);
+}
+#parva_text{
+    color: rgb(47, 137, 86);
+    border-style: inset;
+    border-color: rgba(166, 255, 231, 0.654);
+    cursor:grabbing;
+}
+#parva_text:active{
+ border-style: outset;
+}
