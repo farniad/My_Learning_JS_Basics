@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+
+@media(max-width: 600px){
+    #content{
+        flex-direction: column;
+        align-items: center;
+}
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+#h{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    color: black;
+}
+#h:hover{
+    text-shadow: 0 0 5px #83b3b9,
+    0 0 10px,
+    0 0 20px;
+    animation: h_glow 1.5s infinite alternate;
+}
+@keyframes h_glow {
+    0%{ text-shadow: 100 0 5px #83b3b9,
+     0 0 10px #83b3b9,
+     0 0 20px #83b3b9;}
+    100%{ text-shadow: 0 0 7px #2f8d00,
+     0 0 10px #83b3b9,
+     0 0 70px #83b3b9;}
+ 
+ }
+
+#text1, #text2{
+    color: rgb(2, 2, 85);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+#button{
+    background-color: rgba(95, 158, 160, 0.32);
+    padding: 5px 8px;
+    cursor: pointer;
+    border: 3px;
+    border-radius: 17px;
+    color: rgb(2, 32, 59);
+    transition: 0.2s;
+}
+#button:hover{
+    background-color: rgba(20, 2, 85, 0.939);
+    color: rgba(199, 215, 228, 0.962);
+    transition: background-color 0.5s;
+}
+#button:active{
+    background-color: rgb(15, 15, 15);
+    box-shadow: 7px 5px 5px;
+}
+span#result1, span#result2 {
+    margin-top: 15px;
+    font-size: medium; 
+    font-family: Arial, Helvetica, sans-serif; 
+    color: rgb(95, 153, 160);
+    display: block;
+    border-style:inset;
+
+}

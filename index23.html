@@ -4,19 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index23.css"> 
 </head>
 <body>
-    <input id="string" type="text" placeholder="enter the text">
-    <br>
-    <label> 
-    <input id="first_index" type="text" maxlength="1" placeholder="enter the first character">
-    <input id="second_index" type="text" maxlength="1" placeholder="enter the second character">
-    <input id="button" type="button" onclick="swap_characters()" value="click">
+    <form id="content">
+        <h2 id="h">Remove a character at the specified position of a given string & return the new string</h2>
+        <p> enter text </p>
+        <input id="text1" type="text">
+
+        <div>
+        <p> enter position for index to remove:</p>
+        <label>
+            <input id="first_index" type="number" placeholder="first index">
+        </label>
+        <label>
+            <input id="last_index" type="number" placeholder="last index">
+        </label>
+        </div>
+
+        <br> <br>
+        <h>click to change</h>
+        <input id="button" type="button" onclick="change()" value="click">
+        
+        <span id="result1"  >
+
+        </span>
+    </form>
+    <div id="content">
+        <h2 id="h">
+            Create a new string from a given string 
+            changing the position of characters(chars)
+        </h2>
+        <input id="text2" type="text" placeholder="enter the text">
+        <br>
+        <label> 
+        <input id="first_char" type="text" maxlength="1" placeholder="enter the first character">
+        <input id="second_char" type="text" maxlength="1" placeholder="enter the second character">
+        <input id="button" type="button" onclick="swap_characters()" value="click">
+        
+        </label>
+        <br>
+        result:
+        <span id="result2"></span>
     
-    </label>
-    <br>
-    result:
-    <span id="result"></span>
-    <script src="index23.js"></script>
+    </div>
+    <script src="indexx23.js"></script>
 </body>
 </html>
